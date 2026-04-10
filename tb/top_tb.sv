@@ -40,18 +40,36 @@ initial begin
     /** testbench logic goes below */
     clk_tb<=1'b1;       // sets clk_tb to 1
     #(CLK_PERIOD*3);    // waits for CLK_PERIOD * 3 ticks
-    val1 = 4'b0000;
+    val1 = 4'b0001;
     val2 = 4'b0000;
     #(CLK_PERIOD*2);
-    val1 = 4'b0011;
-    #(CLK_PERIOD*2);
-    val2 = 4'b0011;
+    val1 = 4'b0010;
     #(CLK_PERIOD*2);
     val1 = 4'b0011;
-    val2 = 4'b0111;
+    #(CLK_PERIOD*2);
+    val1 = 4'b0100;
+    #(CLK_PERIOD*2);
+    val1 = 4'b0101;
+    #(CLK_PERIOD*2);
+    val1 = 4'b0110;
+    #(CLK_PERIOD*2);
+    val1 = 4'b0111;
+    #(CLK_PERIOD*2);
+    val1 = 4'b1000;
+    #(CLK_PERIOD*2);
+    val1 = 4'b1001;
+    #(CLK_PERIOD*2);
+    val1 = 4'b1010;
+    #(CLK_PERIOD*2);
+    val1 = 4'b1011;
+    #(CLK_PERIOD*2);
+    val1 = 4'b1100;
+    #(CLK_PERIOD*2);
+    val1 = 4'b1101;
+    #(CLK_PERIOD*2);
+    val1 = 4'b1110;
     #(CLK_PERIOD*2);
     val1 = 4'b1111;
-    val2 = 4'b1111;
     // bcdin = 4'h0; 
     #(CLK_PERIOD*2);
 
